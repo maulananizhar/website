@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,10 +16,14 @@ const config: Config = {
       },
       container: {
         center: true,
-        padding: {
-          DEFAULT: "0rem",
-          lg: "10rem",
-        },
+        // padding: {
+        //   DEFAULT: "0rem",
+        //   lg: "10rem",
+        // },
+      },
+      colors: {
+        "lana-dark": "#1d1f28",
+        "lana-light": "#eff4f6",
       },
     },
   },
