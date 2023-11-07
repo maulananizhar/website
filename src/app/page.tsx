@@ -17,7 +17,8 @@ import useSWR from "swr";
 import { Sling as Hamburger } from "hamburger-react";
 
 export default function Home() {
-  const fetcher = (args: string) => fetch(args).then(res => res.json());
+  const fetcher = (args: string) =>
+    fetch(args, { method: "POST" }).then(res => res.json());
   const { setTheme } = useTheme();
   const [isHamburger, setHamburger] = React.useState(false);
 
@@ -318,13 +319,13 @@ export default function Home() {
           <div className="inline-flex flex-col justify-start md:justify-center font-mono text-xs max-w-[150px] md:max-w-[180px] lg:max-w-[192px]">
             <Link
               className="inline-block text-left hover:text-cyan-700 dark:hover:text-cyan-500 duration-500"
-              href="/">
-              /me
+              href="https://github.com/lanakuge/website">
+              /source
             </Link>
             <Link
               className="inline-block text-left hover:text-cyan-700 dark:hover:text-cyan-500 duration-500"
-              href="https://github.com/lanakuge/website">
-              /source
+              href="/">
+              /back
             </Link>
           </div>
         </div>
@@ -333,7 +334,7 @@ export default function Home() {
             href="https://github.com/lanakuge"
             target="_blank"
             className="font-mono text-xs font-thin hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
-            Created by Nizhar Maulana
+            Created with <b>♡</b> by Nizhar Maulana
           </Link>
           <p className="font-mono text-xs font-thin opacity-80">
             Last Updated on: 04-Nov-2023
