@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nizhar Maulana",
   description: '"A software developer. Born and live in Jakarta, Indonesia.',
+  icons: "/logo.svg",
 };
 
 export default function RootLayout({
