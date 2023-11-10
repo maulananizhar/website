@@ -38,9 +38,9 @@ export default function Home() {
 
   return (
     <div className="dark:bg-lana-dark dark:text-lana-light bg-lana-light text-lana-dark">
-      <nav className="container flex justify-between px-4 md:px-0 py-8">
+      <nav className="container flex justify-between px-4 md:px-0 py-8 z-40 sticky top-0 left-0 dark:bg-lana-dark bg-lana-light">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img
               src="/logo.svg"
               alt="Lanakuge"
@@ -55,7 +55,7 @@ export default function Home() {
               height={40}
               className="absolute hover:bg-cyan-700 hover:bg-opacity-10 duration-500 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex md:hidden text-cyan-700 dark:text-cyan-500">
           <Hamburger
@@ -65,37 +65,37 @@ export default function Home() {
           />
         </div>
         <div className="font-mono text-xs gap-5 items-center md:flex hidden">
-          <a
+          <Link
             href="/"
             className="hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
             <span className="text-cyan-700 dark:text-cyan-500">01. </span>Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/about"
             className="hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
             <span className="text-cyan-700 dark:text-cyan-500">02. </span>About
-          </a>
-          <a
+          </Link>
+          <Link
             href="/blog"
             className="hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
             <span className="text-cyan-700 dark:text-cyan-500">03. </span>Blog
-          </a>
-          <a
+          </Link>
+          <Link
             href="/projects"
             className="hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
             <span className="text-cyan-700 dark:text-cyan-500">04. </span>
             Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="/uses"
             className="hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
             <span className="text-cyan-700 dark:text-cyan-500">05. </span>Uses
-          </a>
-          <a
+          </Link>
+          <Link
             href="/resume"
             className="py-3 px-4 border border-cyan-700 text-cyan-700 hover:bg-cyan-700 dark:border-cyan-500 dark:text-cyan-500 rounded dark:hover:bg-cyan-500 dark:hover:bg-opacity-10 hover:bg-opacity-10 duration-500">
             Resume
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -319,7 +319,8 @@ export default function Home() {
           <div className="inline-flex flex-col justify-start md:justify-center font-mono text-xs max-w-[150px] md:max-w-[180px] lg:max-w-[192px]">
             <Link
               className="inline-block text-left hover:text-cyan-700 dark:hover:text-cyan-500 duration-500"
-              href="https://github.com/lanakuge/website">
+              href="https://github.com/lanakuge/website"
+              target="_blank">
               /source
             </Link>
             <Link
@@ -334,7 +335,7 @@ export default function Home() {
             href="https://github.com/lanakuge"
             target="_blank"
             className="font-mono text-xs font-thin hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
-            Created with <b>♡</b> by Nizhar Maulana
+            Created with ♡ by Nizhar Maulana
           </Link>
           <p className="font-mono text-xs font-thin opacity-80">
             Last Updated on: 04-Nov-2023
@@ -348,7 +349,10 @@ export default function Home() {
             <div className="text-xs font-mono text-left truncate">
               {trackLoading === true ? (
                 <>
-                  <Link href="https://open.spotify.com" className="truncate">
+                  <Link
+                    href="https://open.spotify.com"
+                    target="_blank"
+                    className="truncate">
                     Not playing
                   </Link>
                   <p className="truncate opacity-80">Spotify</p>
@@ -357,12 +361,82 @@ export default function Home() {
                 <>
                   <Link
                     href={track.trackUrl}
+                    target="_blank"
                     className="truncate hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
                     {track.title}
                   </Link>
                   <p className="truncate opacity-80">{track.artist}</p>
                 </>
               )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`fixed top-28 right-0 w-[60vw] max-w-[60vw] z-30 ${
+          isHamburger ? "translate-x-0" : "translate-x-[60vw]"
+        } duration-500`}>
+        <div className="flex flex-col py-16 h-screen bg-lana-light dark:bg-lana-dark text-center gap-8">
+          <Link
+            href="/"
+            className="mx-auto hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
+            <span className="text-cyan-700 dark:text-cyan-500">01. </span>Home
+          </Link>
+          <Link
+            href="/about"
+            className="mx-auto hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
+            <span className="text-cyan-700 dark:text-cyan-500">02. </span>About
+          </Link>
+          <Link
+            href="/blog"
+            className="mx-auto hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
+            <span className="text-cyan-700 dark:text-cyan-500">03. </span>Blog
+          </Link>
+          <Link
+            href="/projects"
+            className="mx-auto hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
+            <span className="text-cyan-700 dark:text-cyan-500">04. </span>
+            Projects
+          </Link>
+          <Link
+            href="/uses"
+            className="mx-auto hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
+            <span className="text-cyan-700 dark:text-cyan-500">05. </span>Uses
+          </Link>
+          <Link
+            href="/resume"
+            className="mx-auto py-3 px-4 inline-block border border-cyan-700 text-cyan-700 hover:bg-cyan-700 dark:border-cyan-500 dark:text-cyan-500 rounded dark:hover:bg-cyan-500 dark:hover:bg-opacity-10 hover:bg-opacity-10 duration-500">
+            Resume
+          </Link>
+          <div className="mx-auto flex gap-8">
+            <Link
+              href="https://github.com/lanakuge"
+              target="_blank"
+              className="hover:-translate-y-1 group duration-500">
+              <RxGithubLogo className="w-6 h-6 group-hover:text-cyan-700 dark:group-hover:text-cyan-500 duration-500" />
+            </Link>
+            <Link
+              href="https://instagram.com/maulananizhar_"
+              target="_blank"
+              className="hover:-translate-y-1 group duration-500">
+              <RxInstagramLogo className="w-6 h-6 group-hover:text-cyan-700 dark:group-hover:text-cyan-500 duration-500" />
+            </Link>
+            <Link
+              href="https://twitter.com/lanaberg_"
+              target="_blank"
+              className="hover:-translate-y-1 group duration-500">
+              <RxTwitterLogo className="w-6 h-6 group-hover:text-cyan-700 dark:group-hover:text-cyan-500 duration-500" />
+            </Link>
+            <div className="w-6 h-6 hover:-translate-y-1 hover:cursor-pointer group duration-500">
+              <RxSun
+                className="absolute w-6 h-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 group-hover:text-cyan-700 dark:group-hover:text-cyan-500"
+                onClick={() => setTheme("dark")}
+              />
+              <RxMoon
+                className="absolute w-6 h-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 group-hover:text-cyan-700 dark:group-hover:text-cyan-500"
+                onClick={() => setTheme("light")}
+              />
             </div>
           </div>
         </div>
