@@ -35,7 +35,7 @@ export async function POST() {
     }
   );
 
-  if (track.data == "") {
+  if (track.data == "" || !track.data.is_playing) {
     return Response.json({
       isPlaying: false,
       artist: "Spotify",
