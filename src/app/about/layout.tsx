@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nizhar Maulana",
+  title: "About - Nizhar Maulana",
   description: '"A software developer. Born and live in Jakarta, Indonesia.',
   icons: "/logo.svg",
 };
