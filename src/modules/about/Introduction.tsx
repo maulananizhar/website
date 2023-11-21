@@ -17,7 +17,7 @@ export default function Introduction() {
           <Link
             href="https://ft.unj.ac.id/ptik/"
             target="_blank"
-            className="hover:text-cyan-700 hover:dark:text-cyan-500 duration-500">
+            className="hover:text-cyan-700 hover:dark:text-cyan-500 duration-500 underline">
             Jakarta State University
           </Link>
           .
