@@ -1,25 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import {
-  RxExternalLink,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxMoon,
-  RxSun,
-  RxTwitterLogo,
-} from "react-icons/rx";
-import { SiSpotify } from "react-icons/si";
-import Link from "next/link";
 import * as React from "react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-import { Sling as Hamburger } from "hamburger-react";
 import Header from "@/components/layouts/Header";
 import Aside from "@/components/layouts/Aside";
 import Footer from "@/components/layouts/Footer";
 import Introduction from "@/modules/about/Introduction";
-import Skillset from "@/modules/about/Skillset";
+import Skillsets from "@/modules/about/Skillsets";
+import Contact from "@/modules/about/Contact";
 
 export default function Home() {
   const fetcher = (args: string) =>
@@ -42,11 +32,12 @@ export default function Home() {
   const { track, trackLoading, isError } = useCurrentPlaying();
 
   return (
-    <div className="dark:bg-lana-dark dark:text-lana-light bg-lana-light text-lana-dark">
+    <div className="font-sans dark:bg-lana-dark dark:text-lana-light bg-lana-light text-lana-dark">
       <Header />
 
       <Introduction />
-      <Skillset />
+      <Skillsets />
+      <Contact />
 
       <Footer />
       <Aside />
