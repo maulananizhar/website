@@ -13,7 +13,7 @@ export default function Home() {
   // const time = newDate.getTime();
 
   return (
-    <div className="dark:bg-lana-dark dark:text-lana-light bg-lana-light text-lana-dark">
+    <div className="font-sans dark:bg-lana-dark dark:text-lana-light bg-lana-light text-lana-dark">
       <Header />
 
       <Introduction />
