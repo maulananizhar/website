@@ -33,7 +33,7 @@ export default function Footer() {
             </Link>
             <Link
               className="inline-block text-left hover:text-cyan-700 dark:hover:text-cyan-500 duration-500"
-              href="/">
+              href="#">
               /back
             </Link>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
             Created with ♡ by Nizhar Maulana
           </Link>
           <p className="font-mono text-xs font-thin opacity-80">
-            Last Updated on: 04-Nov-2023
+            Last Updated on: 22-Nov-2023
           </p>
         </div>
         <div className="flex justify-center sm:justify-end w-1/2 sm:w-1/4 order-2 sm:order-3">
