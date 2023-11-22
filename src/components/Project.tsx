@@ -3,7 +3,7 @@ import { RxExternalLink } from "react-icons/rx";
 
 type ProjectProps = {
   title: string;
-  subtitle: string | null;
+  subtitle: string;
   desc: string;
   stack: string[];
   url: string;
