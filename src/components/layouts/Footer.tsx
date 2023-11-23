@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="inline-flex flex-col justify-start md:justify-center font-mono text-xs max-w-[150px] md:max-w-[180px] lg:max-w-[192px]">
             <Link
               className="inline-block text-left hover:text-cyan-700 dark:hover:text-cyan-500 duration-500"
-              href="https://github.com/lanakuge/website"
+              href="https://github.com/maulananizhar/website"
               target="_blank">
               /source
             </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         <div className="w-full sm:w-2/4 order-3 sm:order-2 mt-4 sm:mt-0">
           <Link
-            href="https://github.com/lanakuge"
+            href="https://github.com/maulananizhar"
             target="_blank"
             className="font-mono text-xs font-thin hover:text-cyan-700 dark:hover:text-cyan-500 duration-500">
             Created with ♡ by Nizhar Maulana

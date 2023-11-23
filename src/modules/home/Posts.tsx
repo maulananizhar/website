@@ -17,7 +17,7 @@ type DataArray = {
 export default function Posts() {
   const fetcher = (args: string) => fetch(args).then(res => res.json());
   const { data, isLoading, error } = useSWR(
-    "https://raw.githubusercontent.com/lanakuge/website/master/src/_data/posts.json",
+    "https://raw.githubusercontent.com/maulananizhar/website/master/src/_data/posts.json",
     fetcher
   );
 

@@ -22,14 +22,14 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.svg"
-              alt="Lanakuge"
+              alt="maulananizhar"
               width={40}
               height={40}
               className="absolute hover:bg-cyan-500 hover:bg-opacity-10 duration-500 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
             />
             <Image
               src="/logo-light.svg"
-              alt="Lanakuge"
+              alt="maulananizhar"
               width={40}
               height={40}
               className="absolute hover:bg-cyan-700 hover:bg-opacity-10 duration-500 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
@@ -116,7 +116,7 @@ export default function Header() {
           </Link>
           <div className="mx-auto flex gap-8">
             <Link
-              href="https://github.com/lanakuge"
+              href="https://github.com/maulananizhar"
               target="_blank"
               className="hover:-translate-y-1 group duration-500">
               <RxGithubLogo className="w-6 h-6 group-hover:text-cyan-700 dark:group-hover:text-cyan-500 duration-500" />

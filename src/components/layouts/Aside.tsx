@@ -16,7 +16,7 @@ export default function Aside() {
       <div className="hidden md:block fixed bottom-0 left-20 z-10">
         <div className="flex flex-col gap-6">
           <Link
-            href="https://github.com/lanakuge"
+            href="https://github.com/maulananizhar"
             target="_blank"
             className="hover:-translate-y-1 group duration-500">
             <RxGithubLogo className="w-6 h-6 group-hover:text-cyan-700 dark:group-hover:text-cyan-500 duration-500" />

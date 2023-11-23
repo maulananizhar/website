@@ -2,19 +2,19 @@
   {
     "title": "DanaKu",
     "subtitle": "Melakukan transaksi, mengakses informasi, dan berinteraksi kapan saja dan di mana saja.",
-    "githubLink": "https://github.com/lanakuge/dev-danaku",
+    "githubLink": "https://github.com/maulananizhar/dev-danaku",
     "demoLink": "https://danaku-production.vercel.app/"
   },
   {
     "title": "MovieDB",
     "subtitle": "My first rest-api project, built by javascrip and react with daisyui.",
-    "githubLink": "https://github.com/lanakuge/deploy-next-omdb-app",
+    "githubLink": "https://github.com/maulananizhar/deploy-next-omdb-app",
     "demoLink": "https://deploy-next-omdb-app.vercel.app/"
   },
   {
     "title": "Effortless Survival",
     "subtitle": "Mindustry mod to help you play survival without effort.",
-    "githubLink": "https://github.com/lanakuge/effortless-survival",
+    "githubLink": "https://github.com/maulananizhar/effortless-survival",
     "demoLink": "#"
   }
 ]

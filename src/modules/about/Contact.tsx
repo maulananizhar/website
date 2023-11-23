@@ -22,9 +22,9 @@ export default function Contact() {
             GitHub -{" "}
             <Link
               className="hover:text-cyan-700 hover:dark:text-cyan-500 duration-500 underline"
-              href="https://github.com/lanakuge"
+              href="https://github.com/maulananizhar"
               target="_blank">
-              https://github.com/lanakuge
+              https://github.com/maulananizhar
             </Link>
           </li>
           <li>
