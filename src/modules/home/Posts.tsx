@@ -1,5 +1,5 @@
-import Post from "@/components/post/Post";
-import Skeleton from "@/components/post/Skeleton";
+import Post from "@/components/temp/Post";
+import Skeleton from "@/components/temp/Skeleton";
 import { numberToDateString } from "@/libs/date";
 import Link from "next/link";
 import useSWR from "swr";
