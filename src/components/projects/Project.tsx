@@ -6,6 +6,7 @@ type ProjectProps = {
   title: string;
   subtitle: string;
   githubLink: string;
+  imgUrl: string;
   demoLink: string | null;
 };
 
@@ -13,6 +14,7 @@ export default function Project({
   title,
   subtitle,
   githubLink,
+  imgUrl,
   demoLink,
 }: ProjectProps) {
   return (
@@ -20,7 +22,8 @@ export default function Project({
       <div className="w-full lg:w-1/2">
         <div className="m-4 hover:-translate-y-1 duration-500 group">
           <Image
-            src="/projects/img/danaku.png"
+            src={imgUrl}
+            // src="/projects/img/danaku.png"
             alt="image"
             width="920"
             height="520"
@@ -35,12 +38,14 @@ export default function Project({
             <div className="flex mb-4 gap-4 justify-end">
               <Link
                 href={githubLink}
+                target="_blank"
                 className="flex items-center leading-none gap-1 hover:text-cyan-700 dark:hover:text-cyan-500 duration-500 hover:underline">
                 Github <RxExternalLink className="text-lg" />
               </Link>
               {demoLink !== "#" ? (
                 <Link
                   href={demoLink !== null ? demoLink : "#"}
+                  target="_blank"
                   className="flex items-center leading-none gap-1 hover:text-cyan-700 dark:hover:text-cyan-500 duration-500 hover:underline">
                   Demo <RxExternalLink className="text-lg" />
                 </Link>
