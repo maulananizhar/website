@@ -5,6 +5,7 @@ type DataValue = {
   title: string;
   subtitle: string;
   githubLink: string;
+  imgUrl: string;
   demoLink: string | null;
 };
 
@@ -30,6 +31,7 @@ export default function Projects() {
                 key={index}
                 title={value.title}
                 subtitle={value.subtitle}
+                imgUrl={value.imgUrl}
                 githubLink={value.githubLink}
                 demoLink={value.demoLink}
               />
